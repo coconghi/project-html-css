@@ -54,6 +54,21 @@ a {
   opacity: 0.9;
 }
 
+.line-clamp {
+  overflow: hidden;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
 /*_________________header_________________*/
 .header {
   background-color: #fffcf4;
@@ -326,7 +341,7 @@ a {
 }
 
 .popular .course-list .course-item {
-  width: 38.91%;
+  flex: 1;
   border-radius: 12px;
   background: #fff;
   border: 1px solid #e2dfda;
