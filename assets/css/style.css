@@ -27,7 +27,7 @@ a {
   font-size: 3.8rem;
   font-weight: 700;
   line-height: 126.316%;
-  letter-spacing: -0.76px;
+  letter-spacing: -0.076rem;
 }
 
 .main-content {
@@ -67,6 +67,26 @@ a {
 
 .break-all {
   word-break: break-all;
+}
+
+.over-scroll {
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.over-scroll::-webkit-scrollbar {
+  background-color: #6347003f;
+  width: 1.0rem;
+  border-radius: 999rem;
+}
+
+.over-scroll::-webkit-scrollbar-thumb {
+  background-color: #634700a3;
+  border-radius: 999rem;
+}
+
+.over-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color);
 }
 
 /*_________________header_________________*/
@@ -293,14 +313,14 @@ a {
 /*_________________popular-top_________________*/
 
 .popular {
-  padding: 200px 0;
+  padding: 20rem 0;
 }
 
 .popular-top .desc {
-  width: 458px;
-  margin-top: 16px;
+  width: 45.8rem;
+  margin-top: 1.6rem;
   color: #5f5b53;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 166.667%;
 }
 
@@ -312,7 +332,7 @@ a {
 
 .popular-top .controls {
   display: flex;
-  gap: 18px;
+  gap: 1.8rem;
 }
 
 .popular-top .control-btn {
@@ -320,10 +340,10 @@ a {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  border: 1px solid var(--primary-color);
+  border: 0.1rem solid var(--primary-color);
   color: var(--primary-color);
 }
 
@@ -335,45 +355,45 @@ a {
 
 /*_________________course-list_________________*/
 .popular .course-list {
-  margin-top: 55px;
+  margin-top: 5.5rem;
   display: flex;
-  gap: 30px;
+  gap: 3rem;
 }
 
 .popular .course-list .course-item {
   flex: 1;
-  border-radius: 12px;
+  border-radius: 1.2rem;
   background: #fff;
-  border: 1px solid #e2dfda;
+  border: 0.1rem solid #e2dfda;
   background: #fff;
 }
 
 .popular .course-list .course-item:hover {
   background: #fff;
-  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
-  border: 1px solid transparent;
+  box-shadow: 0rem 1.8rem 3.6rem 0rem rgba(0, 0, 0, 0.05);
+  border: 0.1rem solid transparent;
 }
 
 .popular .course-item .thumb {
   width: 100%;
-  height: 278px;
-  border-radius: 12px 12px 0px 0px;
+  height: 27.8rem;
+  border-radius: 1.2rem 1.2rem 0rem 0rem;
   object-fit: cover;
 }
 
 .popular .course-item .info {
-  margin: 16px 22px 22px;
+  margin: 1.6rem 2.2rem 2.2rem;
 }
 
 .popular .info .head {
   display: flex;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
 }
 
 .popular .info .head .title {
   color: #171100;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 166.667%;
 }
@@ -387,7 +407,7 @@ a {
 .popular .info .desc {
   color: #5f5b53;
   line-height: 185.714%;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .popular .info .foot {
@@ -398,13 +418,13 @@ a {
 
 .popular .info .foot .price {
   color: #171100;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 166.667%;
 }
 
 .popular .info .foot .btn {
-  width: 118px;
+  width: 11.8rem;
   color: #fff;
   text-align: center;
   font-weight: 600;
@@ -414,4 +434,79 @@ a {
   background-color: var(--primary-color);
   border-color: transparent;
   cursor: pointer;
+}
+
+/*_________________feedback_________________*/
+
+.feedback {
+  height: 38rem;
+  background-color: #2e2100;
+}
+.feedback-list .feedback-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 9.6rem 0;
+}
+
+.feedback-item .avatar {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .desc:first-of-type {
+  margin-top: 1.8rem;
+  margin-bottom: 0.4rem;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  line-height: 141.667%;
+}
+
+.feedback-item .desc:last-of-type {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 185.714%;
+  margin-bottom: 2.8rem;
+}
+
+.feedback-item .dots {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.feedback-item .doc {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #634700;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.feedback-item .doc.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+.feedback-list .feedback-item .content {
+  margin-top: 2.8rem;
+  width: 63.24%;
+  position: relative;
+}
+
+.feedback-item blockquote {
+  height: 16rem;
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 153.846%;
+}
+
+.feedback-item .open-quote {
+  width: 3rem;
+  height: 2.8rem;
+  position: absolute;
+  left: -3rem;
+  top: -2.8rem;
 }
